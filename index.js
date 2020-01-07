@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  // `who-to-greet` input defined in action metadata file
+  // `name` input defined in action metadata file
   const name = core.getInput('name');
   console.log(`Hello ${name}!`);
   const time = (new Date()).toTimeString();
